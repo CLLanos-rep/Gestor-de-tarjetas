@@ -1,24 +1,31 @@
 package com.cll.gestordecompras.modelos;
 
-public class Compra {
-    private int valor;
-    private String descripcion;
+import java.time.LocalDateTime;
 
-    public int getValor() {
-        return valor;
+public class Compra {
+    private double valor;
+    private String descripcion;
+    private LocalDateTime fecha;
+
+    public Compra(double valorCompra, String descripcion) {
+        this.valor = valorCompra;
+        this.descripcion = descripcion;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public double getValor() {
+        return valor;
     }
 
     public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public LocalDateTime getFecha() {
+        return fecha;
     }
 
-
+    @Override
+    public String toString() {
+        return String.format(getFecha() + " | " + getDescripcion() + ": " + getValor());
+    }
 }
