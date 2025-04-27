@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        int idTarjeta = 123456789;
+        String idTarjeta = "123456789";
         String usuarioTarjeta = "Nobody";
         double limiteDeTarjeta;
         String descripcion;

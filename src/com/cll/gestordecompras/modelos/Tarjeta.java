@@ -5,13 +5,13 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Tarjeta {
-    private final int id;
+    private final String id;
     private String usuario;
     private double cupo;
     private double saldo;
     private List<Compra> transacciones;
 
-    public Tarjeta(int id, String usuario, double cupo) {
+    public Tarjeta(String id, String usuario, double cupo) {
         this.id = id;
         this.usuario = usuario;
         this.cupo = cupo;

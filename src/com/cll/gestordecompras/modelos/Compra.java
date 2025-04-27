@@ -10,6 +10,7 @@ public class Compra {
     public Compra(double valorCompra, String descripcion) {
         this.valor = valorCompra;
         this.descripcion = descripcion;
+        this.fecha = LocalDateTime.now();
     }
 
     public double getValor() {
